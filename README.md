@@ -41,21 +41,21 @@ Air-Gap Security Focused: Built-in verification prompts to enforce execution in 
 
 ```text
 
+├── main.py                          # CLI orchestrator and offline safety checks
 ├── bip32.py                         # Hierarchical Deterministic wallet derivation (secp256k1)
 ├── bip39.py                         # Entropy checksumming, wordlist indexing, PBKDF2 hashing
 ├── bip84.py                         # HASH160 and Bech32 address encoder (Native SegWit)
-├── dist/
-│	 ├── main.exe			         # Standalone pre-compiled binary for offline Windows execution (portable)
 ├── entropy_generation_VisionAI.py   # Image-based feature extraction and entropy generation
 ├── entropy_generator.py             # CSPRNG fallback and bit conversion utilities
-├── main.py                          # CLI orchestrator and offline safety checks
+├── requirements.txt                 # Requirements to install
 ├── wordlist/                        # Official BIP-39 dictionaries (multi-language TXT files)
 │    ├── english.txt
 │    ├── italian.txt
 │    ├── spanish.txt
 │    └── ...
-└── img/
-
+└── img/                             # Examples of images
+     ├── e.g.1 (TEST-ONLY).jpeg
+     └── e.g.2 (TEST-ONLY).jpg
 ```
 
 
